@@ -33,15 +33,26 @@
   padding: 8px;
 }
 .form__button {
-  border: 1px solid #ddd;
+  border: 0.5px solid #ddd;
   padding: 8px;
   border-radius: 20px;
   color: azure;
   background-color: #405cfa;
-  width: 45%;
+  width: 48%;
+  display: block;
+  width: 250px;
+  text-align: center;
+  text-decoration: none;
 }
 .form__button__delete {
   background-color: red;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10px;
 }
 
 main {

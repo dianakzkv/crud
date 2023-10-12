@@ -41,18 +41,29 @@
   }
 
   &__button {
-    border: 1px solid s.color('light');
+    border: 0.5px solid s.color('light');
     padding: s.space(2);
     border-radius: 20px;
     color: azure;
     background-color: #405cfa;
-    width: 45%;
+    width: 48%;
+
+    display: block;
+    width: 250px;
+    // height: 40px;
+    text-align: center;
+    text-decoration: none;
     &__delete {
       background-color: red;
     }
   }
 }
-
+.buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10px;
+}
 main {
   display: flex;
   flex-direction: column;

@@ -2,6 +2,7 @@
       <form method='POST' action='/product-edit'>
         <div class='form__content'>
           <h3 class='form__title'>Edit product</h3>
+		  {{#with data}}
           <div class='form__field'>
             <label
               for='productName'
@@ -11,7 +12,20 @@
               type='text'
               name='productName'
               class='form__input'
-			   value={{name}}
+			   value={{[name]}}
+            />
+          </div>
+
+		  <div class='form__field'>
+            <label
+              for='productName'
+              class='form__label'
+            >ID:</label>
+            <input
+              type='number'
+              name='id'
+              class='form__input'
+				value={{id}}
             />
           </div>
 
@@ -41,11 +55,11 @@
             />
           </div>
 
-          <div>
-			<button class='form__button'>Save</button>
-			<button class='form__button form__button__delete'>Delete product</button>
+          <div class="buttons">
+			<a href="/product-edit" class='form__button' id="saveButton">Save</a>
+			<a href="/product-delete" class='form__button form__button__delete' id="deleteButton">Delete product</a>
 		  </div>
-		
+		{{/with}}
         </div>
       </form>
     </div>
