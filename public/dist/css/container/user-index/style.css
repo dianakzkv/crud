@@ -3,18 +3,12 @@
   flex-direction: column;
   padding: 16px;
   gap: 32px;
-  border: 1px #ddd;
-  border-radius: 8px;
-  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
-  background-color: #fff;
-  width: 600px;
-  padding: 16px;
-  margin: 16px;
 }
 .form__title {
-  font-size: 18px;
+  font-size: 20px;
   font-weight: bold;
   padding-bottom: 4px;
+  border-bottom: 1px solid #ddd;
 }
 .form__content {
   display: grid;
@@ -36,27 +30,16 @@
   border: 1px solid #ddd;
   padding: 8px;
   border-radius: 20px;
-  color: azure;
-  background-color: #405cfa;
 }
 
 main {
   display: flex;
   flex-direction: column;
   gap: 40px;
-  padding: 20px;
 }
 
 .user-list li {
   padding: 5px 15px 0 5px;
-}
-
-h1.title {
-  font-size: 24px;
-  font-weight: bold;
-  padding-bottom: 16px;
-  border-bottom: 1px solid #ddd;
-  color: #405cfa;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,22 @@
+.product__card {
+  border: 1px #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  width: 600px;
+  padding: 16px;
+  margin: 16px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.product__card__button {
+  border: 1px solid #ddd;
+  padding: 12px;
+  border-radius: 6px;
+  color: #ddd;
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=style.css.map */

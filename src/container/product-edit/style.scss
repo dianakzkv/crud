@@ -46,6 +46,10 @@
     border-radius: 20px;
     color: azure;
     background-color: #405cfa;
+    width: 45%;
+    &__delete {
+      background-color: red;
+    }
   }
 }
 

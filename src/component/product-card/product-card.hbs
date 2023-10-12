@@ -1,0 +1,15 @@
+<link
+  rel='stylesheet'
+  type='text/css'
+  href='/src/component/product-card/style.scss'
+/>
+
+<div class='product__card'>
+  <h1 class='product__title'>{{name}}</h1>
+  <p class='product__description'>{{description}}</p>
+  <span class='product__id'>ID: {{id}}</span>
+  <div class='product__footer'>
+    <span>{{price}}$</span>
+    <a href='/product-edit?id={{id}}'>Edit</a>
+  </div>
+</div>

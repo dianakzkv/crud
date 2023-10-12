@@ -1,11 +1,7 @@
-<main class='main'>
-  <section>
-    <h1 class='title'>Create product</h1>
-
-    <div class='form'>
-      <form method='POST' action='/product-create'>
+ <div class='form'>
+      <form method='POST' action='/product-edit'>
         <div class='form__content'>
-          <h3 class='form__title'>Information about product</h3>
+          <h3 class='form__title'>Edit product</h3>
           <div class='form__field'>
             <label
               for='productName'
@@ -15,6 +11,7 @@
               type='text'
               name='productName'
               class='form__input'
+			   value={{name}}
             />
           </div>
 
@@ -27,6 +24,7 @@
               type='number'
               name='price'
               class='form__input'
+			  value={{price}}
             />
           </div>
 
@@ -39,12 +37,16 @@
               type='text'
               name='description'
               class='form__input'
+			  value={{description}}
             />
           </div>
 
-          <button class='form__button'>Add product</button>
+          <div>
+			<button class='form__button'>Save</button>
+			<button class='form__button form__button__delete'>Delete product</button>
+		  </div>
+		
         </div>
       </form>
     </div>
   </section>
-</main>

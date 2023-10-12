@@ -1,0 +1,13 @@
+<main class='main'>
+  <section class="product__list">
+	<h1 class='title'>List of products</h1>
+
+	<div class="product__cards">
+		{{#each productList}}
+	
+			{{> product-card id=id name=name description=description price=price }}
+
+		{{/each}}
+	</div>
+  </section>
+</main>

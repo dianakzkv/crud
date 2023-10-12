@@ -38,6 +38,10 @@
   border-radius: 20px;
   color: azure;
   background-color: #405cfa;
+  width: 45%;
+}
+.form__button__delete {
+  background-color: red;
 }
 
 main {
