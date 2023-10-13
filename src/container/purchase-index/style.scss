@@ -1,0 +1,17 @@
+@use '../../lib/service.scss' as s;
+
+// @use '../../component/purchase-product-card/style.scss' as
+//   purchaseProduct;
+
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: s.space(10);
+  padding: s.space(10);
+}
+.purchase-product-list {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: s.space(5);
+}

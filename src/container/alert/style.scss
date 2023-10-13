@@ -1,0 +1,30 @@
+@use '../../lib/service.scss' as s;
+
+.card {
+  border: 1px s.color('light');
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  width: 600px;
+  padding: 16px;
+  margin: 16px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  &__button {
+    border: 1px solid s.color('light');
+    padding: s.space(3);
+    border-radius: 6px;
+    color: azure;
+    background-color: #405cfa;
+    text-decoration: none;
+  }
+}
+
+h1 {
+  margin-bottom: s.space(3);
+  font-weight: 700;
+}

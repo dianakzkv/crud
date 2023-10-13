@@ -1,0 +1,58 @@
+@use '../../lib/service.scss' as s;
+
+.product--card {
+  border: 1px s.color('light');
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  width: 600px;
+  padding: 16px;
+  margin: 16px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  &__img {
+    max-height: 250px;
+    width: 100%;
+  }
+  &__title {
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  &__description {
+    color: #696969;
+  }
+
+  &__category {
+    border: 1px solid transparent;
+    border-radius: 30px;
+    padding: s.space(1) s.space(4);
+    font-size: 14px;
+
+    &--1 {
+      border-color: s.color('blue');
+      color: s.color('blue');
+    }
+    &--2 {
+      border-color: s.color('green');
+      color: s.color('green');
+    }
+  }
+
+  &__button {
+    border: 1px solid s.color('light');
+    padding: s.space(3);
+    border-radius: 6px;
+    color: s.color('light');
+    background-color: s.color('blue');
+    transition: opacity 0.3s ease;
+
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+}
