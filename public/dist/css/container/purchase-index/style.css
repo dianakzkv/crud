@@ -1,3 +1,44 @@
+.product--card {
+  border: 1px #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  width: 600px;
+  padding: 16px;
+  margin: 16px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.product--card__img {
+  max-height: 250px;
+  width: 100%;
+}
+.product--card__title {
+  font-size: 20px;
+  font-weight: bold;
+}
+.product--card__description {
+  color: #696969;
+}
+.product--card__category {
+  border: 1px solid transparent;
+  border-radius: 30px;
+  padding: 4px 16px;
+  font-size: 14px;
+}
+.product--card__button {
+  border: 1px solid #ddd;
+  padding: 12px;
+  border-radius: 6px;
+  color: #ddd;
+  transition: opacity 0.3s ease;
+}
+.product--card__button:hover {
+  opacity: 0.7;
+}
+
 .main {
   display: flex;
   flex-direction: column;

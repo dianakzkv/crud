@@ -1,7 +1,7 @@
 @use '../../lib/service.scss' as s;
 
-// @use '../../component/purchase-product-card/style.scss' as
-//   purchaseProduct;
+@use '../../component/purchase-product-card/style.scss' as
+  purchaseProduct;
 
 .main {
   display: flex;
