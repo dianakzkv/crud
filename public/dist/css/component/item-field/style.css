@@ -1,0 +1,12 @@
+.subtitle {
+  color: grey;
+  text-align: left;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/*# sourceMappingURL=style.css.map */

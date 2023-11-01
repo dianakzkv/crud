@@ -1,0 +1,12 @@
+@use '../../lib/service.scss' as s;
+
+.subtitle {
+  color: grey;
+  text-align: left;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: s.space(2);
+}

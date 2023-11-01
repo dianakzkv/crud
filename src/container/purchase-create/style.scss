@@ -1,0 +1,43 @@
+@use '../../lib/service.scss' as s;
+@use '../../component/purchase-product-card/style.scss' as
+  purchaseProduct;
+
+@use '../../component/divider/style.scss' as divider;
+@use '../../component/field/style.scss' as field;
+@use '../../component/button/style.scss' as button;
+
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: s.space(10);
+  padding: s.space(10);
+}
+
+.form-card {
+  border: 1px s.color('light');
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(2, 3, 3, 0.3);
+  background-color: #fff;
+  padding: 16px;
+
+  display: flex;
+  flex-direction: column;
+  gap: s.space(4);
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  color: s.color(blue);
+}
+
+.cart {
+  display: flex;
+  flex-direction: column;
+  gap: s.space(2);
+}
+.cart__item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}

@@ -1,0 +1,37 @@
+<form class='form-card'>
+
+  <h1 class='title'>Info about order</h1>
+
+    {{#with purchase}}
+	  <div class="purchase--section">{{>item-field title='ID:' text=id }}</div>
+	  {{>divider}}
+
+	  <div class="purchase--section">
+		{{>item-field title='First name:' text=firstname }}
+		{{>item-field title='Last name:' text=lastname }}
+		{{>item-field title='Phone:' text=phone }}
+		{{>item-field title='Email:' text=email }}
+	  </div>
+	  {{>divider}}
+
+	  <div class="purchase--section">
+		{{!-- {{>item-field title='Product name:' text=product.title }}
+		{{#if product.comment}}{{>item-field title='Comment:' text=product.comment }}{{/if}} --}}
+		{{>item-field title='Product name:' text=product }}
+		{{#if product.comment}}{{>item-field title='Comment:' text=comment }}{{/if}}
+	  </div>
+	  {{>divider}}
+
+	  <div class="purchase--section">
+		{{>item-field title='Price:' text=productPrice addtext=' $' }}
+		{{>item-field title='Delivery:' text=deliveryPrice addtext=' $' }}
+		{{>item-field title='Total price:' text=totalPrice addtext=' $' }}
+		{{>item-field title='Bonus:' text=bonus addtext=' $' }}
+	  </div>
+	  {{>divider}}
+			
+			<a href="/purchase-info-edit?id={{id}}" class="button" style="text-align: center;">Edit data</a>
+
+    {{/with}}
+
+</form>

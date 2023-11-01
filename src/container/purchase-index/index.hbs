@@ -1,0 +1,9 @@
+<main class='main'>
+	<h1 class='title'>Products</h1>
+
+  <div class="purchase-product-list">
+	{{#each data.list}}
+		{{>purchase-product-card data=this}}
+	{{/each}}
+  </div>
+</main>
