@@ -10,8 +10,13 @@
   padding: s.space(10);
 }
 .purchase-product-list {
-  width: 100%;
+  width: 50%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: s.space(5);
+}
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  color: s.color(blue);
 }

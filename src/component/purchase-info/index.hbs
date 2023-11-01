@@ -1,0 +1,23 @@
+<span>ID: {{id}}</span>
+<span>
+	<ul class="column">
+		<li class="subtitle">Product</li>
+		<li>{{product}}</li>
+	</ul>
+	{{!-- {{>item-field title='Product:' text=product }} --}}
+</span>
+<span>
+	<ul class="column">
+		<li class="subtitle">Total price order </li>
+		<li>{{totalPrice}} $</li>
+	</ul>
+</span>
+<span>
+	<ul class="column">
+		<li class="subtitle">Bonus points</li>
+		<li>{{bonus}}</li>
+	</ul>
+</span>
+ <a
+      href='/purchase-info?id={{id}}'
+    >{{>button text='Checkout order'}}</a>

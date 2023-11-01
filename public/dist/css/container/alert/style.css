@@ -1,3 +1,16 @@
+.button {
+  border: 1px solid #ddd;
+  padding: 12px;
+  border-radius: 10px;
+  color: #ddd;
+  background-color: #054ef9;
+  transition: opacity 0.3s ease;
+  text-decoration: none;
+}
+.button:hover {
+  opacity: 0.7;
+}
+
 .card {
   border: 1px #ddd;
   border-radius: 8px;
@@ -10,14 +23,6 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-}
-.card__button {
-  border: 1px solid #ddd;
-  padding: 12px;
-  border-radius: 6px;
-  color: azure;
-  background-color: #405cfa;
-  text-decoration: none;
 }
 
 h1 {

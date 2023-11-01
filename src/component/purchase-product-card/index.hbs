@@ -11,10 +11,12 @@
     {{#each category}}
       <span
         class='product-card__category product-card__category--{{id}}'
-      ></span>
+      >{{text}}</span>
     {{/each}}
 
-    <button class='product-card__button'>Buy now:
-      {{price}}$</button>
+    <a
+      href='/purchase-product?id={{id}}'
+    >
+	  {{>button text='Buy now: ' price=price}}</a>
   </div>
 {{/with}}

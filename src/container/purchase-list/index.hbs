@@ -1,0 +1,14 @@
+<main class='main'>
+  
+	<h1 class='title'>My orders</h1>
+	
+	<ul class="purchase__list">
+		{{#each data.list}}
+			<li class="purchase__item">
+				{{>purchase-info}}
+			</li>
+			{{> divider}}
+		{{/each}}
+	</ul>	
+	
+</main>

@@ -1,22 +1,23 @@
 @use '../../lib/service.scss' as s;
+@use '../../component/button/style.scss' as button;
 
-.product--card {
+.product-card {
   border: 1px s.color('light');
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   background-color: #fff;
-  width: 600px;
   padding: 16px;
-  margin: 16px;
 
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+
+  gap: s.space(3);
 
   &__img {
     max-height: 250px;
-    width: 100%;
+    width: 250px;
   }
   &__title {
     font-size: 20px;
@@ -30,16 +31,16 @@
   &__category {
     border: 1px solid transparent;
     border-radius: 30px;
-    padding: s.space(1) s.space(4);
+    padding: s.space(1) s.space(3);
     font-size: 14px;
 
     &--1 {
-      border-color: s.color('blue');
-      color: s.color('blue');
+      border-color: s.color(blue);
+      color: s.color(blue);
     }
     &--2 {
-      border-color: s.color('green');
-      color: s.color('green');
+      border-color: s.color(green);
+      color: s.color(green);
     }
   }
 
@@ -48,11 +49,16 @@
     padding: s.space(3);
     border-radius: 6px;
     color: s.color('light');
-    background-color: s.color('blue');
+    background-color: s.color(blue);
     transition: opacity 0.3s ease;
+    text-decoration: none;
 
     &:hover {
       opacity: 0.7;
     }
   }
 }
+// .product-card__category--1 {
+//   border-color: s.color('blue');
+//   color: s.color('blue');
+// }

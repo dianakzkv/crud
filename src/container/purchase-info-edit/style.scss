@@ -1,0 +1,35 @@
+@use '../../lib/service.scss' as s;
+
+@use '../../component/divider/style.scss' as divider;
+@use '../../component/button/style.scss' as button;
+@use '../../component/item-field/style.scss' as item-field;
+@use '../../component/field/style.scss' as field;
+
+.purchase--section {
+  //purchase--section
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: s.space(4);
+  padding: s.space(2) 0;
+}
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  color: s.color(blue);
+}
+
+.form-card {
+  border: 1px s.color('light');
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(2, 3, 3, 0.3);
+  background-color: #fff;
+  padding: 16px;
+
+  display: flex;
+  flex-direction: column;
+  gap: s.space(2);
+  margin: s.space(5);
+}
+.purchase--section-button {
+  grid-template-columns: 1fr;
+}

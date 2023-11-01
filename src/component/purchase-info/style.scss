@@ -1,0 +1,17 @@
+@use '../../lib/service.scss' as s;
+
+@use '../../component/divider/style.scss' as divider;
+
+@use '../../component/button/style.scss' as button;
+@use '../../component/item-field/style.scss' as item-field;
+
+.subtitle {
+  color: grey;
+  text-align: left;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: s.space(2);
+}

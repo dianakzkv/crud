@@ -1,0 +1,22 @@
+{{#with purchase}}
+
+	<form  method='POST'
+		action='/purchase-info?id={{id}}'
+		class='form-card'>
+
+	<h1 class='title'>Edit data</h1>
+
+		<div class="purchase--section">{{>item-field title='ID:' text=id }}</div>
+
+		<div class="purchase--section">
+			{{>field label="Last name:" type="text" name="lastname" value=lastname}}
+			{{>field label="First name:" type="text" name="firstname" value=firstname}}
+			{{>field label="Email:" type="email" name="email" value=email}}
+			{{>field label="Phone:" type="phone" name="phone" value=phone}}
+		</div>
+		{{>divider}}
+
+		{{>button text='Save editing'}}
+
+	</form>
+{{/with}}

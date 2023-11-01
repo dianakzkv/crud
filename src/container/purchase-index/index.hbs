@@ -1,12 +1,9 @@
 <main class='main'>
-    <h1 class='title'>Products</h1>
+	<h1 class='title'>Products</h1>
 
   <div class="purchase-product-list">
-	{{>purchase-product-card data=data}}
-	{{>purchase-product-card data=data}}
-	{{>purchase-product-card data=data}}
-	{{>purchase-product-card data=data}}
-	{{>purchase-product-card data=data}}
-	{{>purchase-product-card data=data}}
+	{{#each data.list}}
+		{{>purchase-product-card data=this}}
+	{{/each}}
   </div>
 </main>
