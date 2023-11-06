@@ -1,0 +1,32 @@
+@use '../../lib/service.scss' as s;
+@use '../../lib/spotify.scss' as spotify;
+
+.search {
+  background-color: s.color(dark-gray);
+  padding: s.space(3) s.space(5);
+
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: 56px 1fr auto;
+  gap: s.space(3);
+
+  color: s.color(light);
+
+  font-size: 24px;
+
+  &__button {
+    color: s.color(light);
+
+    transition: opacity 0.7s;
+
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+}
+.button-go-home {
+  font-weight: bold;
+  font-size: 18px;
+
+  width: 100%;
+}

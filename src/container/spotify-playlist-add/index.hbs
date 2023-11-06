@@ -1,0 +1,28 @@
+<main class='main'>
+  {{#with data}}
+    <div class='main__content tracks-card'>
+
+        <h1 class='title title--center'>🎧 Add track to playlist "{{name}}" 👇🏽</h1>
+
+		<ul class="track__list">
+			{{#each tracks}}
+			<li class="track">
+				<img src="{{image}}" alt="track image">
+
+				<div class="track__content">
+					<strong class="track__name">{{name}}</strong>
+					<em class="track__author">{{author}}</em>
+				</div>
+
+				<a href="/spotify-track-add?playlistId={{../playlistId}}&trackId={{id}}">
+					<img src="/svg/spotify/add.svg">
+				</a>
+			</li>
+			{{/each}}
+		</ul>
+		
+		{{>button text="Go back to 'My playlists'" href='/'}}
+		
+    </div>
+  {{/with}}
+</main>

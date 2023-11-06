@@ -96,23 +96,26 @@ a:hover {
   color: #939292;
 }
 
-.choose {
+.header {
   display: grid;
-  gap: 24px;
+  grid-template-columns: auto 42px 42px;
+  gap: 28px;
+  align-items: center;
 }
-.choose__image {
-  width: 56px;
-  height: 56px;
+
+.title {
+  font-size: 32px;
+  color: #fff;
 }
-.choose__item {
-  display: grid;
-  grid-template-columns: 56px 1fr;
-  gap: 24px;
-}
-.choose__content {
+
+.playlist {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  align-items: flex-start;
+}
+.playlist__list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 /*# sourceMappingURL=style.css.map */

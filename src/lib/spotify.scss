@@ -1,0 +1,96 @@
+@use './service.scss' as s;
+@use '../component/button/style.scss' as button;
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: opacity 0.7s;
+  &:hover {
+    opacity: 0.6;
+  }
+}
+
+.main {
+  background-color: s.color('dark');
+  height: 100%;
+  color: s.color('light');
+
+  display: flex;
+  justify-content: center;
+  padding: s.space(6) s.space(2);
+}
+
+.main__content {
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: s.space(15);
+  padding: s.space(2);
+}
+
+.title {
+  font-size: 24px;
+}
+
+.title--center {
+  text-align: center;
+}
+
+.track {
+  display: grid;
+  grid-template-columns: 92px 1fr 42px;
+  gap: s.space(7);
+  align-items: center;
+
+  &__list {
+    display: grid;
+    gap: s.space(7);
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: s.space(2);
+  }
+
+  &__name {
+    font-size: 24px;
+    color: s.color(light);
+  }
+
+  &__author {
+    font-size: 18px;
+    color: s.color(gray);
+  }
+}
+
+.playlist {
+  display: grid;
+  grid-template-columns: 92px 1fr;
+  gap: s.space(7);
+  align-items: center;
+
+  &__list {
+    display: grid;
+    gap: s.space(7);
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: s.space(2);
+  }
+
+  &__name {
+    font-size: 24px;
+    color: s.color(light);
+  }
+
+  &__amount {
+    font-size: 16px;
+    color: s.color(gray);
+  }
+}

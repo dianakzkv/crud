@@ -1,0 +1,27 @@
+<main class='main'>
+  {{#with data}}
+    <div class='main__content'>
+        <h1 class='title title--center'>Search playlist</h1>
+
+		<form method="post" action="/spotify-search" class="search">
+			<img src="/svg/spotify/search.svg" alt="search-icon">
+			<input type="search" class="search__input" placeholder="Write a name of the playlist..." name="value">
+			<button class="search__button">Search</button>
+		</form>
+
+		<ul class="playlist__list">
+			{{#each playlists}}
+			<li class="playlist">
+				<img src="/svg/spotify/playlist.svg" alt="{{name}}" height="92px" width="92px">
+				<div class="playlist__content">
+					<strong class="playlist__name">{{name}}</strong>
+					<span class="playlist__amount">Number of songs: {{amount}}</span>
+				</div>
+			</li>
+			{{/each}}
+		</ul>
+
+		<a href="/">{{>button text="Go back to 🏠 Home page" class='button-go-home'}}</a>
+    </div>
+  {{/with}}
+</main>

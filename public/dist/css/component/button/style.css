@@ -1,0 +1,14 @@
+.button {
+  padding: 12px 28px;
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(7, 115, 45, 0.707);
+  color: #121212;
+  background-color: #20d562;
+  transition: opacity 0.5s ease;
+  text-decoration: none;
+}
+.button:hover {
+  opacity: 0.7;
+}
+
+/*# sourceMappingURL=style.css.map */

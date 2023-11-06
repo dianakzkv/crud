@@ -1,0 +1,53 @@
+<main class='main'>
+  {{#with data}}
+    <div class='main__content'>
+
+      <div class='header'>
+        <h1 class='title'>My playlists</h1>
+        <a href='/spotify-search'>
+          <img
+            src='/svg/spotify/search-main.svg'
+            width='42px'
+            height='42px'
+            alt='search-icon'
+          />
+        </a>
+        <a href='/spotify-create'>
+          <img
+            src='/svg/spotify/add-main.svg'
+            width='42px'
+            height='42px'
+            alt='add-icon'
+          />
+        </a>
+      </div>
+
+      {{!-- <a href="/spotify-playlist-add?playlistId={{playlistId}}" class="add-button">
+			<img src="/img/spotify/add.jpg" alt="add button">Add to playlist
+		</a> --}}
+
+      <ul class='playlist__list'>
+
+        {{#each playlists}}
+          <li class='playlist'>
+            <img
+              src='/svg/spotify/playlist.svg'
+              alt='{{name}}'
+              height='250px'
+              width='250px'
+            />
+            <div class='playlist__content'>
+              <strong
+                class='playlist__name'
+              >{{name}}</strong>
+              <span class='playlist__amount'>{{amount}}
+                songs</span>
+            </div>
+          </li>
+        {{/each}}
+
+      </ul>
+
+    </div>
+  {{/with}}
+</main>

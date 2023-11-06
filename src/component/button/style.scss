@@ -1,0 +1,14 @@
+@use '../../lib/service.scss' as s;
+.button {
+  padding: s.space(3) s.space(7);
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(7, 115, 45, 0.707);
+  color: s.color('dark');
+  background-color: s.color(green);
+  transition: opacity 0.5s ease;
+  text-decoration: none;
+
+  &:hover {
+    opacity: 0.7;
+  }
+}

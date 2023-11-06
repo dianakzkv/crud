@@ -1,0 +1,23 @@
+@use '../../lib/service.scss' as s;
+@use '../../component/button/style.scss' as button;
+@use '../../lib/spotify.scss' as spotify;
+
+.card {
+  border: 1px s.color('dark');
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(148, 148, 148, 0.1);
+  background-color: s.color(dark-gray);
+  width: 600px;
+  padding: 16px;
+  margin: 16px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h1 {
+  margin-bottom: s.space(3);
+  font-weight: 700;
+}

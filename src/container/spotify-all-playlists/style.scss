@@ -1,0 +1,35 @@
+@use '../../lib/service.scss' as s;
+@use '../../lib/spotify.scss' as spotify;
+
+// .add-playlist-button {
+//   //   display: grid;
+//   //   grid-template-columns: 96px 1fr;
+//   //   align-items: center;
+//   //   gap: s.space(6);
+//   //   color: s.color(light);
+//   //   font-size: 18px;
+// }
+
+.header {
+  display: grid;
+  grid-template-columns: auto 42px 42px;
+  gap: s.space(7);
+
+  align-items: center;
+}
+
+.title {
+  font-size: 32px;
+  color: #fff;
+}
+
+.playlist {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  &__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}

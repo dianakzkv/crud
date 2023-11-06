@@ -96,23 +96,35 @@ a:hover {
   color: #939292;
 }
 
-.choose {
-  display: grid;
-  gap: 24px;
+.header {
+  display: flex;
+  justify-content: end;
 }
-.choose__image {
-  width: 56px;
-  height: 56px;
+
+.cross-icon {
+  font-size: 25px;
+  cursor: pointer;
 }
-.choose__item {
-  display: grid;
-  grid-template-columns: 56px 1fr;
-  gap: 24px;
-}
-.choose__content {
+
+.form {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  gap: 24px;
+}
+.form__field {
+  font-size: 42px;
+  text-align: center;
+  padding: 8px;
+  border-bottom: 1px solid #939292;
+  width: 100%;
+}
+.form__button {
+  border-radius: 25px;
+  max-width: fit-content;
+  font-size: 20px;
+  font-weight: 500;
 }
 
 /*# sourceMappingURL=style.css.map */

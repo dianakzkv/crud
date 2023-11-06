@@ -1,0 +1,25 @@
+<main class='main'>
+  <div class='main__content'>
+    <header class='header'>
+      <a href='/'>
+        <span class='cross-icon'>&#10006;</span>
+      </a>
+    </header>
+
+    <h1 class='title title--center'>Name the playlist</h1>
+    <form
+      method='POST'
+      action='/spotify-create{{#if data.isMix}}?isMix=true{{/if}}'
+      class='form'
+    >
+      <input required
+        type='text'
+        class='form__field'
+        placeholder='My playlist'
+		name = 'playlistName'
+      />
+      {{!-- <button class='form__button'>Create</button> --}}
+	  {{>button text='Create' class='form__button'}}
+    </form>
+  </div>
+</main>

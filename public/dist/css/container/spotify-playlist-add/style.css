@@ -96,23 +96,19 @@ a:hover {
   color: #939292;
 }
 
-.choose {
+.add-button {
   display: grid;
+  grid-template-columns: 96px 1fr;
+  align-items: center;
   gap: 24px;
+  color: #ddd;
+  font-size: 18px;
 }
-.choose__image {
-  width: 56px;
-  height: 56px;
-}
-.choose__item {
-  display: grid;
-  grid-template-columns: 56px 1fr;
-  gap: 24px;
-}
-.choose__content {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+
+.tracks-card {
+  background-color: rgb(47, 46, 46);
+  padding: 16px 24px;
+  border-radius: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */
