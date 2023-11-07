@@ -1,6 +1,6 @@
 # Roadmap :)
 
-In '3-purchase' branch you can see the CRUD code (create online order):
+##In '3-purchase' branch you can see the CRUD code (create online order):
 
 ![Screenshot Spotify](./purchase.png)
 
@@ -13,7 +13,8 @@ In '3-purchase' branch you can see the CRUD code (create online order):
 ![Screenshot Spotify](./purchase5.png)
 
 
-In 'spotify' branch you can see the Spotify CRUD code:
+
+##In 'spotify' branch you can see the Spotify CRUD code:
 
 ![Screenshot Spotify](./spotify.png)
 
@@ -24,5 +25,15 @@ In 'spotify' branch you can see the Spotify CRUD code:
 ![Screenshot Spotify](./search2.png)
 
 ![Screenshot Spotify](./add-song.png)
+
+
+
+##In '2-product' branch you can see the Product CRUD code (create list of products):
+
+![Screenshot Spotify](./product.png)
+
+![Screenshot Spotify](./product1.png)
+
+![Screenshot Spotify](./product3.png)
 
 
