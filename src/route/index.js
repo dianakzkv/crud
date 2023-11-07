@@ -116,9 +116,9 @@ class Playlist {
   }
 }
 
-Playlist.makeMix(Playlist.create('Test'))
-Playlist.makeMix(Playlist.create('Test2'))
-Playlist.makeMix(Playlist.create('Test3'))
+Playlist.makeMix(Playlist.create('Music for dancing💃🏽'))
+Playlist.makeMix(Playlist.create('Training 👟'))
+Playlist.makeMix(Playlist.create('Meditation'))
 
 // ================================================================
 
@@ -128,10 +128,13 @@ router.get('/', function (req, res) {
     style: 'spotify-all-playlists',
 
     data: {
-      playlists: playlists.map(({ tracks, ...rest }) => ({
-        ...rest,
-        amount: tracks.length,
-      })),
+      playlists: playlists.map(
+        ({ tracks, id, ...rest }) => ({
+          ...rest,
+          playlistId: id,
+          amount: tracks.length,
+        }),
+      ),
     },
   })
 })
@@ -335,6 +338,36 @@ router.post('/spotify-search', function (req, res) {
         amount: tracks.length,
       })),
       value,
+    },
+  })
+})
+
+router.get('/spotify-playlist-songs', function (req, res) {
+  const id = Number(req.query.playlistId)
+  console.log(id)
+  const playlist = Playlist.getById(id)
+  console.log(playlist)
+
+  if (!playlist) {
+    return res.render('alert', {
+      style: 'alert',
+
+      data: {
+        message: 'Unsuccessful ❌',
+        info: 'Cann`t find this playlist',
+        openPage: 'Home page',
+        href: '/',
+      },
+    })
+  }
+
+  res.render('spotify-playlist', {
+    style: 'spotify-playlist',
+
+    data: {
+      playlistId: playlist.id,
+      tracks: playlist.tracks,
+      name: playlist.name,
     },
   })
 })

@@ -12,6 +12,10 @@
 }
 
 a {
+  display: block;
+}
+
+a {
   text-decoration: none;
   color: inherit;
   transition: opacity 0.7s;
@@ -125,6 +129,10 @@ a:hover {
   max-width: fit-content;
   font-size: 20px;
   font-weight: 500;
+}
+
+.cross-icon {
+  font-size: 42px;
 }
 
 /*# sourceMappingURL=style.css.map */

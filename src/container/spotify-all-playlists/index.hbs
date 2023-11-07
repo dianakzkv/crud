@@ -12,7 +12,7 @@
             alt='search-icon'
           />
         </a>
-        <a href='/spotify-create'>
+        <a href='/spotify-choose'>
           <img
             src='/svg/spotify/add-main.svg'
             width='42px'
@@ -29,21 +29,26 @@
       <ul class='playlist__list'>
 
         {{#each playlists}}
-          <li class='playlist'>
-            <img
-              src='/svg/spotify/playlist.svg'
-              alt='{{name}}'
-              height='250px'
-              width='250px'
-            />
-            <div class='playlist__content'>
-              <strong
-                class='playlist__name'
-              >{{name}}</strong>
-              <span class='playlist__amount'>{{amount}}
-                songs</span>
-            </div>
-          </li>
+          <a
+            href='/spotify-playlist-songs?playlistId={{playlistId}}'
+          >
+
+            <li class='playlist'>
+              <img
+                src='/svg/spotify/playlist.svg'
+                alt='{{name}}'
+                height='250px'
+                width='250px'
+              />
+              <div class='playlist__content'>
+                <strong
+                  class='playlist__name'
+                >{{name}}</strong>
+                <span class='playlist__amount'>{{amount}}
+                  songs</span>
+              </div>
+            </li>
+          </a>
         {{/each}}
 
       </ul>
