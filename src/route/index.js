@@ -51,7 +51,7 @@ class Product {
 }
 // ================================================================
 Product.add(
-  'https://picsum.photos/250/300',
+  './img/comp-icon.png',
   'APPLE MacBook Pro 14',
   'M1 MAX 64/8TB Custom New (Z15G000DW) Space Gray',
   [
@@ -62,7 +62,7 @@ Product.add(
   12,
 )
 Product.add(
-  'https://picsum.photos/250/300',
+  './img/comp-icon.png',
   'Ноутбук LENOVO',
   'ThinkPad P16 G1 T (21D6001JRA) RAM 16 GB',
   [{ id: 1, text: 'Ready to delivery' }],
@@ -70,7 +70,7 @@ Product.add(
   5,
 )
 Product.add(
-  'https://picsum.photos/250/300',
+  './img/comp-icon.png',
   'ACER Predator Triton',
   '17X PTX17-71 (NH.QK3EU.001) HDD 1TB',
   [{ id: 1, text: 'Ready to delivery' }],
@@ -78,7 +78,7 @@ Product.add(
   10,
 )
 Product.add(
-  'https://picsum.photos/250/300',
+  './img/comp-icon.png',
   'APPLE MacBook Pro 14',
   'M1 MAX 64/8TB Custom New (Z15G000DW) Space Gray',
   [
@@ -89,7 +89,7 @@ Product.add(
   55,
 )
 Product.add(
-  'https://picsum.photos/250/300',
+  './img/comp-icon.png',
   'APPLE MacBook Pro 14"',
   'M1 MAX 64/8TB Custom New (Z15J000DU) Silver',
   [
@@ -99,17 +99,6 @@ Product.add(
   55000,
   32,
 )
-// const testproduct = Product.add(
-// 	'https://picsum.photos/250/300',
-// 	'APPLE MacBook Pro 14"',
-// 	'M1 MAX 64/8TB Custom New (Z15J000DU) Silver',
-// 	[
-// 	  { id: 1, text: 'Ready to delivery' },
-// 	  { id: 2, text: 'TOP' },
-// 	],
-// 	55000,
-// 	32,
-//   )
 
 class Purchase {
   static DELIVERY_PRICE = 150
